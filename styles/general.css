@@ -1,0 +1,11 @@
+body {
+  color: #006d77;
+  background-color: #edf6f9;
+  font-family: abel;
+  z-index: 2;
+}
+.noscroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
