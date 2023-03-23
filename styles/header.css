@@ -87,6 +87,7 @@ header li:hover {
   }
   .genreList {
     line-height: 30px;
+    background-color: #83c5be;
     display: none;
     align-self: center;
     margin-top: 50px;
