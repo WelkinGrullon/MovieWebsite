@@ -131,7 +131,7 @@ function showMovieSpecific(data, section, parent) {
 }
 // Event Listeners
 
-search.addEventListener("keydown", function(e) {
+search.addEventListener("keydown", function (e) {
   const searchTerm = search.value;
   if (e.key === "Enter") {
     if (searchTerm) {
@@ -167,7 +167,7 @@ search.addEventListener("keydown", function(e) {
     search.value = "";
   }
 });
-genreEl.addEventListener("click", function(e, value) {
+genreEl.addEventListener("click", function (e, value) {
   hiddenGenreEl.innerHTML = "";
   mainArea.classList.add("hidden");
   document.getElementById("movieSelection").classList.remove("show");
@@ -188,21 +188,21 @@ genreEl.addEventListener("click", function(e, value) {
     document.getElementById("genreHidden").appendChild(containerContain);
   }
 });
-window.addEventListener("scroll", function(e) {
-  const width = window.innerWidth;
-  if (width > 901) {
-    if (scrollY > 150) {
-      header.classList.add("opacity");
-      this.document.getElementById("genreList").classList.add("opacity");
-      this.document.getElementById("genreLogo").classList.add("opacity");
-    } else if (scrollY < 150) {
-      header.classList.remove("opacity");
-      this.document.getElementById("genreList").classList.remove("opacity");
-      this.document.getElementById("genreLogo").classList.remove("opacity");
-    }
-  }
-});
-document.getElementById("titleName").addEventListener("click", function(e) {
+// window.addEventListener("scroll", function(e) {
+//   const width = window.innerWidth;
+//   if (width > 901) {
+//     if (scrollY > 150) {
+//       header.classList.add("opacity");
+//       this.document.getElementById("genreList").classList.add("opacity");
+//       this.document.getElementById("genreLogo").classList.add("opacity");
+//     } else if (scrollY < 150) {
+//       header.classList.remove("opacity");
+//       this.document.getElementById("genreList").classList.remove("opacity");
+//       this.document.getElementById("genreLogo").classList.remove("opacity");
+//     }
+//   }
+// });
+document.getElementById("titleName").addEventListener("click", function (e) {
   console.log(e.target);
   document.getElementById("mainArea").classList.remove("hidden");
   document.getElementById("hiddenClass").classList.add("hidden");
@@ -211,7 +211,7 @@ document.getElementById("titleName").addEventListener("click", function(e) {
   mainArea.innerHTML = "";
   home();
 });
-document.getElementById("popular").addEventListener("click", function(e) {
+document.getElementById("popular").addEventListener("click", function (e) {
   hiddenGenreEl.innerHTML = "";
   mainArea.classList.add("hidden");
   const sectionName = document.createElement("h1");
@@ -233,7 +233,7 @@ document.getElementById("popular").addEventListener("click", function(e) {
   }
   document.getElementById("genreHidden").appendChild(containerContain);
 });
-document.getElementById("topRated").addEventListener("click", function(e) {
+document.getElementById("topRated").addEventListener("click", function (e) {
   hiddenGenreEl.innerHTML = "";
   mainArea.classList.add("hidden");
   document.getElementById("movieSelection").classList.remove("show");
@@ -253,7 +253,7 @@ document.getElementById("topRated").addEventListener("click", function(e) {
   }
   document.getElementById("genreHidden").appendChild(containerContain);
 });
-document.getElementById("nowPlaying").addEventListener("click", function(e) {
+document.getElementById("nowPlaying").addEventListener("click", function (e) {
   hiddenGenreEl.innerHTML = "";
   mainArea.classList.add("hidden");
   const sectionName = document.createElement("h1");
@@ -275,10 +275,10 @@ document.getElementById("nowPlaying").addEventListener("click", function(e) {
   }
   document.getElementById("genreHidden").appendChild(containerContain);
 });
-document.getElementById("navimg").addEventListener("click", function() {
+document.getElementById("navimg").addEventListener("click", function () {
   document.getElementById("movieSelection").classList.toggle("show");
   console.log("click");
 });
-document.getElementById("genreLogo").addEventListener("click", function() {
+document.getElementById("genreLogo").addEventListener("click", function () {
   document.getElementById("genreList").classList.toggle("displayer");
 });
