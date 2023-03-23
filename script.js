@@ -282,3 +282,6 @@ document.getElementById("navimg").addEventListener("click", function () {
 document.getElementById("genreLogo").addEventListener("click", function () {
   document.getElementById("genreList").classList.toggle("displayer");
 });
+document.getElementById("genreLogo").addEventListener("touchend", function () {
+  document.getElementById("genreList").classList.toggle("displayer");
+});
