@@ -13,6 +13,7 @@ header {
   align-items: center;
   border-radius: 3px;
   z-index: 101;
+  letter-spacing: 2px;
 }
 input {
   min-width: 0;
