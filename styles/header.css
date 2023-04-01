@@ -2,7 +2,7 @@ header {
   position: fixed;
   display: flex;
   flex-direction: row;
-  background-color: #83c5be;
+  background-color: #14213d;
   width: 100%;
   height: 75px;
   top: 0;
@@ -46,10 +46,10 @@ header div input {
   cursor: pointer;
 }
 header p:hover {
-  color: antiquewhite;
+  color: orange;
 }
 header li:hover {
-  color: antiquewhite;
+  color: orange;
 }
 .navimg {
   width: 25px;
@@ -162,7 +162,7 @@ header li:hover {
   width: 100vw;
   height: 100vh;
   z-index: 105;
-  background-color: #83c5be;
+  background-color: black;
   margin: 0;
   padding: 0%;
 }

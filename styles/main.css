@@ -18,7 +18,7 @@ main {
   width: 100%;
 }
 .main-sections::-webkit-scrollbar-track {
-  background: #83c5be;
+  background: black;
 }
 .main-sections::-webkit-scrollbar-thumb {
   background-color: #edf6f9;
@@ -38,6 +38,7 @@ main {
   margin-left: 5px;
   margin-bottom: 5px;
   margin-right: 5px;
+  border: 1px solid white
 }
 .movieCard img {
   width: 100%;
