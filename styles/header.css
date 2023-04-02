@@ -88,7 +88,7 @@ header li:hover {
   }
   .genreList {
     line-height: 30px;
-    background-color: #83c5be;
+    background-color: #14213d;
     display: none;
     align-self: center;
     margin-top: 50px;
@@ -174,4 +174,7 @@ header li:hover {
 .displayer {
   display: grid;
   grid-template-rows: 1fr 1fr;
+}
+.linkSection:hover .genreList{
+  display:grid;
 }
